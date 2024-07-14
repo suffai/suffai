@@ -1,0 +1,110 @@
+.terms-page {
+    width: 100%;
+    padding: 5rem 10rem;
+    background: #ffffff;
+    margin-top: 10rem;
+}
+
+.terms-page-container {
+    max-width: 144rem;
+    margin: 0 auto;
+}
+
+.terms-page-heading {
+    margin-bottom: 5rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid #999;
+}
+
+.terms-page-heading h1 {
+    margin-bottom: 1rem;
+}
+
+.terms-page-heading p {
+    font-size: 2.2rem;
+    color: #000000;
+    line-height: 2.5rem;
+    letter-spacing: 0.2rem;
+    width: 95%;
+    margin: 0 auto;
+    font-weight: 500;
+}
+
+.terms-page-body h3 {
+    font-size: 2.6rem;
+    color: #000000;
+    line-height: 3rem;
+    letter-spacing: 0.2rem;
+    font-family: 'GrottaTrial',
+        sans-serif;
+    margin-bottom: 1.6rem;
+}
+
+.terms-page-body ul {
+    font-size: 1.8rem;
+    color: #000000;
+    line-height: 2.5rem;
+    letter-spacing: 0.2rem;
+    margin-bottom: 3rem;
+    font-weight: 500;
+    list-style-type: none;
+}
+
+.terms-page-body ul li {
+    margin-bottom: 1.2rem;
+    padding-left: 2.5rem;
+    position: relative;
+}
+
+.terms-page-body ul li:before {
+    content: '✓';
+    color: #483517;
+    margin-right: 0.8rem;
+    font-weight: 600;
+    left: 0;
+    position: absolute;
+}
+
+.terms-page-body p {
+    font-size: 1.8rem;
+    color: #000000;
+    line-height: 2.2rem;
+    letter-spacing: 0.2rem;
+    margin-bottom: 3rem;
+    font-weight: 500;
+}
+
+.refund-body.terms-page-heading h1 {
+    margin-bottom: 0;
+    margin-top: 15rem;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .terms-page {
+        width: 100%;
+        padding: 5rem 8rem;
+        background: rgba(217, 207, 184, 1);
+        margin-top: 10rem;
+    }
+}
+
+
+@media screen and (max-width: 668px) {
+    .terms-page {
+        width: 100%;
+        padding: 5rem 6rem;
+        background: rgba(217, 207, 184, 1);
+        margin-top: 10rem;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .terms-page {
+        width: 100%;
+        padding: 5rem 4rem;
+        background: rgba(217, 207, 184, 1);
+        margin-top: 10rem;
+    }
+}

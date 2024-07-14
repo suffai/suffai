@@ -1,0 +1,455 @@
+.register-page {
+    width: 100%;
+    background: #ffffff;
+    height: 100%;
+}
+
+.register-page-container {
+    padding: 2rem 0 5rem;
+    max-width: 144rem;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.register-page-heading {
+    text-align: center;
+    font-size: 5rem;
+    color: #000000;
+    line-height: normal;
+    letter-spacing: 0.4rem;
+    margin-bottom: 5rem;
+    text-transform: capitalize;
+    font-family: 'Quicksand',
+        sans-serif;
+    font-weight: 600;
+}
+
+.loginForm {
+    width: 40%;
+    margin: 5rem auto;
+    background: rgba(255, 255, 255, 0.5);
+    position: relative;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    border-radius: 20px;
+}
+
+.loginForm .form-item {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.loginForm .form-item .form-item-icon {
+    position: absolute;
+    top: 50%;
+    left: 2rem;
+    width: 2.4rem;
+    height: 2.4rem;
+    opacity: 0.5;
+    color: #000;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.loginForm .form-item .form-item-icon-check {
+    position: absolute;
+    top: 50%;
+    right: 2rem;
+    width: 2.4rem;
+    height: 2.4rem;
+    stroke: #1E955D;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.error-message {
+    font-family: 'Quicksand',
+    sans-serif;
+    font-size: 1.7rem;
+    font-weight: 400;
+    line-height: 3.7rem;
+    text-align: left;
+    color: #EF5350;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.loginForm input[type="text"],
+.loginForm input[type="password"],
+.loginForm input[type="tel"],
+.loginForm input[type="email"] {
+    outline: none;
+    background: #F5F5F5;
+    padding: 2rem 1.5rem;
+    padding-left: calc(2rem * 3.1);
+    padding-right: calc(2rem * 3.1);
+    width: 100%;
+    transition: background 0.5s;
+    font-size: 1.8rem;
+    color: #000;
+    font-family: 'Quicksand',
+        sans-serif;
+    font-weight: 500;
+    line-height: normal !important;
+    border: 1px solid #C7C7C7;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginForm input[type="text"]::placeholder,
+.loginForm input[type="password"]::placeholder,
+.loginForm input[type="tel"]::placeholder,
+.loginForm input[type="email"]::placeholder {
+    color: #000000;
+    opacity: 1;
+    padding-bottom: 0;
+    text-align: left;
+}
+
+.loginForm input[type="text"]::-ms-input-placeholder,
+.loginForm input[type="password"]::-ms-input-placeholder,
+.loginForm input[type="tel"]::-ms-input-placeholder,
+.loginForm input[type="email"]::-ms-input-placeholder {
+    color: #000000;
+    opacity: 1;
+    padding-bottom: 0;
+    text-align: left;
+}
+
+.loginForm input:focus {
+    background: white;
+}
+
+.loginForm input[type="checkbox"] {
+    width: 2.2rem;
+    height: 2.2rem;
+    accent-color: #2E3B7F;
+    cursor: pointer;
+}
+
+.loginForm .checkbox-custom-label {
+    font-size: 1.7rem;
+    color: #666666;
+    margin-bottom: 0 !important;
+    cursor: pointer !important;
+    line-height: normal;
+    font-family: 'Quicksand',
+        sans-serif;
+    margin-left: 1rem;
+}
+
+.loginForm button.sendOTP {
+    display: block;
+    width: auto;
+    background: black;
+    color: white;
+    padding: 1.5rem 3rem;
+    text-align: center;
+    text-transform: capitalize;
+    transition: background 0.5s;
+    font-size: 1.8rem;
+    font-weight: 600;
+    font-family: 'Quicksand',
+        sans-serif;
+    margin: 1.5rem auto 0;
+    border: none;
+    -webkit-border-radius: 10rem;
+    -moz-border-radius: 10rem;
+    -ms-border-radius: 10rem;
+    -o-border-radius: 10rem;
+    border-radius: 10rem;
+}
+
+.loginForm button.logBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: #2E3B7F;
+    color: white;
+    padding: 1.5rem 3rem;
+    text-align: center;
+    text-transform: capitalize;
+    transition: background 0.5s;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    font-family: 'Quicksand',
+        sans-serif;
+    font-weight: 700;
+    border: none;
+    -webkit-border-radius: 10rem;
+    -moz-border-radius: 10rem;
+    -ms-border-radius: 10rem;
+    -o-border-radius: 10rem;
+    border-radius: 10rem;
+    margin-top: 2rem;
+}
+
+.loginForm button:hover {
+    background-color: rgba(0, 0, 0, 0.75);
+    cursor: pointer;
+}
+
+.loginForm button.logBtn:hover {
+    background: #3c50b3;
+    cursor: pointer;
+}
+
+.social-logins {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.social-logins .social-logins-head {
+    width: 100%;
+    border: 1px solid #DADADA;
+    position: relative;
+    margin-bottom: 5rem;
+}
+
+.social-logins .social-logins-head p {
+    width: auto;
+    position: absolute;
+    left: 50%;
+    bottom: 0%;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 19.6px;
+    text-align: center;
+    transform: translate(-50%, 50%);
+    -webkit-transform: translate(-50%, 50%);
+    -moz-transform: translate(-50%, 50%);
+    -ms-transform: translate(-50%, 50%);
+    -o-transform: translate(-50%, 50%);
+    background: #ffffff;
+    padding: 0.5rem 2rem;
+    text-transform: uppercase;
+}
+
+.social-logins .social-logins-btn-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 3rem;
+}
+
+.social-logins .social-logins-btn-container .social-login-btn {
+    padding: 1.5rem 5rem;
+    border: 1px solid #C7C7C7;
+    background: #F5F5F5;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    -ms-border-radius: 100px;
+    -o-border-radius: 100px;
+}
+
+.social-logins .social-logins-btn-container .social-login-btn img {
+    width: 4rem;
+    height: 4rem;
+}
+
+.loginForm-footer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginForm-footer p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 2.8rem;
+    text-align: center;
+    color: #666666;
+}
+
+.loginForm-form .form-item-other a {
+    font-size: 1.7rem;
+    text-decoration: underline;
+    color: #1E3538;
+    font-weight: 600;
+}
+
+.loginForm-form .form-item-other a:hover,
+.loginForm-form .form-item-other a:focus {
+    text-decoration: none;
+}
+
+.loginForm-footer {
+    font-size: 1.7rem;
+    color: #000;
+}
+
+.loginForm-footer a {
+    text-decoration: underline;
+    color: #1E3538;
+    font-weight: 600;
+}
+
+.loginForm-footer a:hover,
+.loginForm-footer a:focus {
+    text-decoration: none;
+}
+
+.loginFormSuccess-popup {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    z-index: 99999;
+}
+
+.loginFormSuccess-popup.loginFormSuccess-popup-open {
+    display: flex;
+}
+
+.loginFormSuccess-popup-container {
+    width: 40%;
+    padding: 8rem 5rem 5rem;
+    background: rgba(255, 255, 255, 0.5);
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+    border-radius: 2rem;
+    position: relative;
+}
+
+.loginFormSuccess-popup-container p {
+    font-size: 2rem;
+    opacity: 1;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.loginFormSuccess-popup-container img {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+}
+
+#loginFormSuccess-popup-close {
+    font-size: 2.2rem;
+    font-weight: 600;
+    position: absolute;
+    top: 5%;
+    right: 3rem;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+@media (max-width: 1500px) {
+    .loginForm {
+        width: 35%;
+    }
+}
+
+@media (max-width: 1368px) {
+    .loginForm {
+        width: 40%;
+        margin: 5rem auto;
+        padding: 3.5rem 4rem;
+    }
+}
+
+@media (max-width: 1180px) {
+    .loginForm {
+        width: 45%;
+        margin: 5rem auto;
+        padding: 3.5rem 4rem;
+    }
+}
+
+@media (max-width: 990px) {
+    .loginForm {
+        width: 50%;
+        margin: 5rem auto;
+        padding: 3.5rem 4rem;
+    }
+
+    .loginFormSuccess-popup-container {
+        width: 50%;
+        padding: 7rem 4rem 4rem;
+    }
+
+    .loginFormSuccess-popup-container img {
+        width: 60%;
+    }
+}
+
+@media (max-width: 868px) {
+    .loginForm input[type="checkbox"] {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .language-selector img {
+        width: 5.5rem;
+        height: auto;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .loginForm {
+        width: 60%;
+        margin: 5rem auto;
+        padding: 3.5rem 4rem;
+    }
+
+    .loginFormSuccess-popup-container {
+        width: 60%;
+        padding: 7rem 4rem 4rem;
+    }
+
+    .loginFormSuccess-popup-container img {
+        width: 70%;
+    }
+}
+
+@media (max-width: 520px) {
+    .loginForm {
+        width: 70%;
+    }
+}

@@ -1,0 +1,255 @@
+.setup-profile-page {
+    width: 100%;
+    background: #ffffff;
+    height: 100%;
+}
+
+.setup-profile-container {
+    padding: 2rem 0 5rem;
+    max-width: 144rem;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+    font-family: 'Quicksand',
+    sans-serif;
+}
+
+
+.setup-profile-heading {
+    text-align: center;
+    font-size: 5rem;
+    color: #000000;
+    line-height: normal;
+    letter-spacing: 0.4rem;
+    margin-bottom: 5rem;
+    text-transform: capitalize;
+    font-family: 'Quicksand',
+        sans-serif;
+    font-weight: 600;
+}
+
+.setupProfileForm {
+    width: 40%;
+    margin: 5rem auto;
+    background: rgba(255, 255, 255, 0.5);
+    position: relative;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    border-radius: 20px;
+}
+
+.setupProfileForm .form-item {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.setupProfileForm .personImage {
+    display: block;
+    width: 20rem;
+    height: 20rem;
+    object-fit: cover;
+    margin: 0 auto;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.setupProfileForm .form-item .form-item-icon {
+    position: absolute;
+    top: 50%;
+    left: 2rem;
+    width: 2.4rem;
+    height: 2.4rem;
+    opacity: 0.5;
+    color: #000;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.setupProfileForm .form-item .form-item-icon-image {
+    position: absolute;
+    top: 80%;
+    right: 2rem;
+    padding: 0.5rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    background: #3c50b3;
+    opacity: 1;
+    color: #ffffff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.setupProfileForm .form-item .form-item-icon-check {
+    position: absolute;
+    top: 50%;
+    right: 2rem;
+    width: 2.4rem;
+    height: 2.4rem;
+    stroke: #1E955D;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.error-message {
+    font-family: 'Quicksand',
+        sans-serif;
+    font-size: 1.7rem;
+    font-weight: 400;
+    line-height: 3.7rem;
+    text-align: left;
+    color: #EF5350;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.setupProfileForm input[type="text"],
+.setupProfileForm input[type="password"],
+.setupProfileForm input[type="tel"],
+.setupProfileForm input[type="email"],
+.setupProfileForm input[type="date"],
+.setupProfileForm select {
+    outline: none;
+    background: #F5F5F5;
+    padding: 2rem 1.5rem;
+    padding-left: calc(2rem * 3.1);
+    padding-right: calc(2rem * 3.1);
+    width: 100%;
+    transition: background 0.5s;
+    font-size: 1.8rem;
+    color: #000;
+    font-family: 'Quicksand',
+        sans-serif;
+    font-weight: 500;
+    line-height: normal !important;
+    border: 1px solid #C7C7C7;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.setupProfileForm input[type="text"]::placeholder,
+.setupProfileForm input[type="password"]::placeholder,
+.setupProfileForm input[type="tel"]::placeholder,
+.setupProfileForm input[type="date"]::placeholder,
+.setupProfileForm input[type="email"]::placeholder {
+    color: #000000;
+    opacity: 1;
+    padding-bottom: 0;
+    text-align: left;
+}
+
+.setupProfileForm input[type="text"]::-ms-input-placeholder,
+.setupProfileForm input[type="password"]::-ms-input-placeholder,
+.setupProfileForm input[type="tel"]::-ms-input-placeholder,
+.setupProfileForm input[type="date"]::-ms-input-placeholder,
+.setupProfileForm input[type="email"]::-ms-input-placeholder {
+    color: #000000;
+    opacity: 1;
+    padding-bottom: 0;
+    text-align: left;
+}
+
+.setupProfileForm input:focus {
+    background: white;
+}
+
+.setupProfileForm input[type="checkbox"] {
+    width: 2.2rem;
+    height: 2.2rem;
+    accent-color: #2E3B7F;
+    cursor: pointer;
+}
+
+.setupProfileForm .checkbox-custom-label {
+    font-size: 1.7rem;
+    color: #666666;
+    margin-bottom: 0 !important;
+    cursor: pointer !important;
+    line-height: normal;
+    font-family: 'Quicksand',
+        sans-serif;
+    margin-left: 1rem;
+}
+
+button.geoButton {
+    display: block;
+    width: auto;
+    background: black;
+    color: white;
+    padding: 1.5rem 3rem;
+    text-align: center;
+    text-transform: capitalize;
+    transition: background 0.5s;
+    font-size: 1.8rem;
+    font-weight: 600;
+    font-family: 'Quicksand',
+        sans-serif;
+    margin: 1.5rem auto 0;
+    border: none;
+    -webkit-border-radius: 10rem;
+    -moz-border-radius: 10rem;
+    -ms-border-radius: 10rem;
+    -o-border-radius: 10rem;
+    border-radius: 10rem;
+}
+
+.setupProfileForm button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: #2E3B7F;
+    color: white;
+    padding: 1.5rem 3rem;
+    text-align: center;
+    text-transform: capitalize;
+    transition: background 0.5s;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    font-family: 'Quicksand',
+        sans-serif;
+    font-weight: 700;
+    border: none;
+    -webkit-border-radius: 10rem;
+    -moz-border-radius: 10rem;
+    -ms-border-radius: 10rem;
+    -o-border-radius: 10rem;
+    border-radius: 10rem;
+    margin-top: 2rem;
+}
+
+button.geoButton:hover {
+    background-color: rgba(0, 0, 0, 0.75);
+    cursor: pointer;
+}
+
+.setupProfileForm button:hover {
+    background: #3c50b3;
+    cursor: pointer;
+}
